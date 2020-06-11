@@ -14,7 +14,7 @@
   <a href="#" target="_blank">
     <img alt="by Glauber Borges" src="https://img.shields.io/badge/%20by-Glauber_Borges-informational?color=34CB79">
   </a>
-  <a href="https://github.com/solrachix" target="_blank" >
+  <a href="https://github.com/glauberborges" target="_blank" >
     <img alt="Github - Glauber Borges" src="https://img.shields.io/badge/Github--%23F8952D?style=social&logo=github">
   </a>
   <a href="https://github.com/glauberborges" target="_blank" >
@@ -28,20 +28,20 @@
   </a>
 </p>
 
-<p align="center">
- <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#information_source-como-usar">Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-license">License</a>
-</p>
+
+
+[ 💻 Projeto](#-projeto) |
+[ 🗂 Banco de Dados](#-banco-de-dados) |
+[ 🚀 Tecnologias](#-tecnologias) |
+[ 🛠 Ferramentas](#-ferramentas) |
+[ ⚙ Instalação](#-instalacao) |
+[ 📝 Como usar](#-como-usar) 
 
 ## 💻 Projeto
 
 **ApiMovie** é uma api para cadastro de títulos de filmes.
 
-## 🚀 Banco de Dados
+## 🗂 Banco de Dados
 ![ApiMovie](database.png)
 
 
@@ -56,7 +56,7 @@ Para esse projeto foi usado as seguintes tecnologias:
 - [PhpStorm](https://www.jetbrains.com/pt-br/phpstorm/)
 - [Postman](https://www.postman.com/)
 
-## ⚙️ Instalação
+## ⚙️ Instalacao
 
 ##### Clone o repositório
 ```bash
