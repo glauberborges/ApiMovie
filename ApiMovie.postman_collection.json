@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "12d4bb49-a61a-4d3c-9dd5-d4ca718a2136",
+		"name": "ApiMovie",
+		"description": "Api para cadastro de título de filmes, acessa via local host no endereço http://127.0.0.1:8000/api/",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "api@movie.com.br",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123mudar",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "/login",
+					"path": [
+						"login"
+					]
+				},
+				"description": "Você pode criar seu usuário caso deseje ou pode usar o user de teste com os dados: E-mail: api@movie.com.br Senha: 123mudar"
+			},
+			"response": []
+		},
+		{
+			"name": "/logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNmRhYmJlYzkyNjU2OWMzZmU5YzAzMDJjN2VhMzc3NjUyMjAzNzYyYjFiNWE3YzlkOWE0YWNlYWQ4N2NlNjY4NTViYzZiZjUwYjNmNDM4MjQiLCJpYXQiOjE1OTE4NDU4ODQsIm5iZiI6MTU5MTg0NTg4NCwiZXhwIjoxNjIzMzgxODg0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.W5MeVjjLgY7VpFkOcktQUCa_6493b2l3EcjxsTJkb2JPAU-J5cSCoOQ9vmgsHk9_sCTj3wQEN0STQQkBKWFeDxb2uclwJ-kRzwb__ENYwVzIEiJLxg6MYVpulFXiQJQ5dQ32Kjyqy2i7h4-9pviWWaZRqjiG11RGqOzrjfQ5Jk9_LTszB9piqLr4DlRwxlLHjm47iJbbpel4IRkLtdxhZqStQ9qHiaSfGCflncEIIMGamuvQI-z3R6O91u_1TRBUvOCvk8nguNkGC75uGoFAck-Frqp88RviB6NBUMzbiDlb_E57QSALpsyLGGFX0IIj9l2s7huSXrcf0II6_Kjc6IxTHb-AE8q5i05O-6hnNvuNN-I_dSxxbWmPrP08dL4mRcQr1qViL03fcRYBaqei1Jf5jesvnFjpiRuDkDUXsGrvy-UCxhtg5Jjh-5QrcCTQlTq9HwIOeoHjg4Wzy8fNTHkk-bUylLg8dY_yryMXbh-l7oU9Jd2r4rL0OSl4HFJu8fKHnuvO-SD_J74TXOWOCagIj_EY4YJihSwFtx8GA09ozKeNCn_sAM2v_aRQ4PHcsz0Bbq6dPEHGz2PK8BTuO8gs-nZjNX87QKn9__9lcs7ss6W-SE3W_rW5i8h4zPmbCd6Oj-CWsTScOCTD8WJYoswwQD70Iip6OyEAx9D5V0s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "api@movie.com.br",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123mudar",
+							"type": "text"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "/logout",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/store/movie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYzcxYTU2YmIyMTI1MmJkOTYyNTAyZDk2ZDE0NTI1MzZlNThmY2E4YmJhYTQ5ZTg5MTE3M2YyNzkyMTAxMjgzZWJmNzM3ODA2MGE2NDIyOTIiLCJpYXQiOjE1OTE4NTcxOTcsIm5iZiI6MTU5MTg1NzE5NywiZXhwIjoxNjIzMzkzMTk3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.UTkrJnRlPS82LOf_WN6p2qXJ_g7Z0iI29HBaBj3XyqPcADsVt9KWLktO-bbHfMyfMtnpa1EVPlW5jwKEhCD1W1XVtlFBhyZ4fJvhC-TCg5nmhSSvQaL0fo4lxIlRA9_gPp2_YkBVrPEdU2QX-s08QE55ofSihfDN3t-jWIvd4xresAQavfV5wcGHj2VoFpwb3WUgsdhaSr9UiyMYHPGxmwJ9qfEmUTZ7_F5RGVeQ-Ih7miKHtn8wYhZp7mDMvWGynTmB4bItigEMgzA3ZZmi-WdcqRdS6svP56SJtzxVOOIVZaViMSJs4GNM3nCxxUlbeq0Q30Vy-0h-fwWlHHzBuBIpfLkfmg1y4tfZqczxJ0iRxMDU-iMS6O7FtE9ORjJ2EDOi-suHtssQkBp8L5LL-wtbkPFaEnXTRccjnKdiPRx38xiI9M5YF0I6I6iwV5G3KSqWLCP6sULRJNqB5qaEXjlGasltnF-EkxydKo2XibcxabycTy1jZ7iJNVkP3RlKH_tP6dUAQy2qhbgDUqKvAAwFbuVxb9DsOqAxrongDPJjQFhSCGvIElmok3rTXqVTWpLgCC1YUpjM9W4R6HRAg-96UNSHcqSjqrsxomtXELgqmAr3S_x_l4R5I3cGbOAkvBLuXnyrOP0mY8gdO9F-NzMuHIAsZfqtWEnsfD8hEAs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Vingadores",
+							"contentType": "w",
+							"description": "string",
+							"type": "text"
+						},
+						{
+							"key": "release_date",
+							"value": "2020-05-10",
+							"description": "date in format = YYYY-MM-DD eg: 2020-05-10",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "01:10:00",
+							"description": "time h:i:s eg: 01:15:00",
+							"type": "text"
+						},
+						{
+							"key": "genre_id",
+							"value": "10",
+							"description": "int (deve ser ID de um gênero previamente cadastrado no banco de dados)",
+							"type": "text"
+						},
+						{
+							"key": "director_id",
+							"value": "1",
+							"description": "int (deve ser ID de um diretor previamente cadastrado no banco de dados)",
+							"type": "text"
+						},
+						{
+							"key": "cast[]",
+							"value": "1",
+							"description": "(int) array (deve ser ID de um ator previamente cadastrado no banco de dados)",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "/store/movie",
+					"path": [
+						"store",
+						"movie"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "1d356699-3e2d-43d5-9c94-a9331eff525d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "5fecc35f-b9f5-486b-9296-baabdc419415",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "ef0671ea-4d8e-4773-a91b-e538e2a69bd1",
+			"key": "url_api",
+			"value": "http://127.0.0.1:8000/api",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
