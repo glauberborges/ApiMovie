@@ -34,7 +34,7 @@
 [ 🗂 Banco de Dados](#-banco-de-dados) |
 [ 🚀 Tecnologias](#-tecnologias) |
 [ 🛠 Ferramentas](#-ferramentas) |
-[ ⚙ Instalação](#-instalacao) |
+[ ⚙ Instalação](#%EF%B8%8F-instalacao) |
 [ 📝 Como usar](#-como-usar) 
 
 ## 💻 Projeto
